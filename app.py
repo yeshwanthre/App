@@ -14,3 +14,7 @@ def ask_question(request: QueryRequest):
     response, _ = get_similar_answer_from_documents(question)
     return {"question": question, "response": response}
 
+# ✅ Health check endpoint
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
