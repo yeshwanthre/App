@@ -147,5 +147,3 @@ def get_similar_answer_from_documents(query: str, score_threshold=0.6):
         full_content = "\n\n".join(related_chunks)
 
     return f"🔍 **Answer:**\n\n{full_content}", full_content
-
-
