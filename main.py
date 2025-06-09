@@ -6,11 +6,11 @@ import os
 # Detect if running in Streamlit Cloud
 IS_CLOUD = st.secrets.get("RUN_ENV", "local") == "cloud"
 
-# Optional imports for local voice features
-if not IS_CLOUD:
-    import pyttsx3
-    import speech_recognition as sr
-    import threading
+# # Optional imports for local voice features
+# if not IS_CLOUD:
+#     import pyttsx3
+#     import speech_recognition as sr
+#     import threading
 
 # 🎨 UI Setup
 col1, col2 = st.columns([0.15, 0.85])
